@@ -18,7 +18,7 @@ pipeline:
                   identifier: Echo_Welcome_Message
                   spec:
                     shell: Sh
-                    command: npm start
+                    command: npm install npm start
           platform:
             os: Linux
             arch: Amd64
