@@ -19,6 +19,15 @@ pipeline:
                   spec:
                     shell: Sh
                     command: npm install npm start
+              - step:
+                  type: BuildAndPushDockerRegistry
+                  name: BuildAndPushDockerRegistry_1
+                  identifier: BuildAndPushDockerRegistry_1
+                  spec:
+                    connectorRef: account.harnessImage
+                    repo: Vishnu-Harness/send
+                    tags:
+                      - <pipeline>
           platform:
             os: Linux
             arch: Amd64
