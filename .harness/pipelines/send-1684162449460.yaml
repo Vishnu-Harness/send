@@ -18,7 +18,7 @@ pipeline:
                   identifier: Echo_Welcome_Message
                   spec:
                     shell: Sh
-                    command: npm build
+                    command: npm start
           platform:
             os: Linux
             arch: Amd64
