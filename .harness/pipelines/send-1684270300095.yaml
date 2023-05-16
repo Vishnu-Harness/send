@@ -14,11 +14,14 @@ pipeline:
             steps:
               - step:
                   type: Run
-                  name: Echo Welcome Message
+                  name: Run1
                   identifier: Echo_Welcome_Message
                   spec:
                     shell: Sh
-                    command: echo "Welcome to Harness CI"
+                    command: |-
+                      npm install
+                      npm run build --if-present
+                      npm test
           platform:
             os: Linux
             arch: Amd64
