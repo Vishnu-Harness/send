@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_send_1684252361491-push-trigger-input-set
+  identifier: Build_send_1684252361491pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Hardik_project
+  pipeline:
+    identifier: Build_send_1684252361491
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
