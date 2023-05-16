@@ -36,7 +36,7 @@ RUN set -x \
         --home /app \
         --uid 10001 \
         app
-RUN apt-get update && apt-get -y install \
+RUN apt-get update && apt-get upgrade -y\
     git-core \
     && rm -rf /var/lib/apt/lists/*
 USER app
