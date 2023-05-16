@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_send_1684270302379-push-trigger-input-set
+  identifier: Build_send_1684270302379pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: VishSend
+  pipeline:
+    identifier: Build_send_1684270302379
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
