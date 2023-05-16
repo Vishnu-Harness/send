@@ -28,9 +28,9 @@ pipeline:
                   identifier: BuildAndPushDockerRegistry_1
                   spec:
                     connectorRef: account.harnessImage
-                    repo: Vishnu-Harness/send
+                    repo: vishnuharness/send
                     tags:
-                      - <pipeline>
+                      - <+pipeline.sequenceId>
           platform:
             os: Linux
             arch: Amd64
