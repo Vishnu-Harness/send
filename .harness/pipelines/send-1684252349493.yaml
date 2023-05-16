@@ -28,6 +28,6 @@ pipeline:
   properties:
     ci:
       codebase:
-        connectorRef: account.Github_OAuth_1684246355606
-        repoName: Vishnu-Harness/send
+        connectorRef: hardik
+        repoName: " goHelloWorldServer"
         build: <+input>
