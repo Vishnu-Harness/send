@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_send_1684270302379-pr-trigger-input-set
+  identifier: Build_send_1684270302379prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: VishSend
+  pipeline:
+    identifier: Build_send_1684270302379
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
