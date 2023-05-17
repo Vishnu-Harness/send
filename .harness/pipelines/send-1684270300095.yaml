@@ -23,6 +23,13 @@ pipeline:
                       npm run build --if-present
                       npm test
               - step:
+                  type: Plugin
+                  name: Plugin_1
+                  identifier: Plugin_1
+                  spec:
+                    connectorRef: vish_connect
+                    image: plugins/docker
+              - step:
                   type: BuildAndPushDockerRegistry
                   name: BuildAndPushDockerRegistry_1
                   identifier: BuildAndPushDockerRegistry_1
